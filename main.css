@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  height: 45px;
+}
+
+.leftMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.rightMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.leftItem {
+  text-align: justify;
+  margin-right: 15px;
+}
+
+.leftItem a {
+  font-size: 1.2rem;
+  color: chocolate;
+}
+
+.rightItem {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.rightItem a {
+  font-size: 1.2rem;
+  color: cornflowerblue;
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* Делаем макет вертикальным */
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .leftMenu {
+    /* Делаем макет вертикальным */
+    flex-direction: column;
+  }
+  .rightMenu {
+    /* Делаем макет вертикальным */
+    flex-direction: column;
+  }
+}
