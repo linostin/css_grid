@@ -59,7 +59,7 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1em;
   font-weight: bold;
-  color: lightcoral;
+  color: black;
   text-decoration-line: none;
   text-decoration-style: solid;
 }
@@ -113,7 +113,7 @@ body {
 .textBlockHello {
   font-size: 40px;
   font-weight: 700;
-  color: #ea5d5d;
+  color: black;
   margin-bottom: 35px;
 }
 
