@@ -121,3 +121,10 @@ body {
   margin-top: 0;
   
 }
+
+.info {
+  display: flex;
+  justify-content: center;
+  width: 992px;
+  margin-top: 5rem;
+}
