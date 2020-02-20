@@ -13,13 +13,13 @@ body {
 .content {
   display: grid;
   justify-content: center;
-  grid-template-columns: 300px 200px 300px;
-  grid-template-rows: 100px 100px 100px;
-  grid-gap: 1rem;
+  grid-template-columns: 300px 100px 100px 100px 100px 300px;
+  grid-template-rows: 25px 420px 100px;
+  grid-row-gap: 1em;
   grid-template-areas:
-    "leftHeader . rightHeader"
-    "leftContentText . rightContentImage"
-    "leftIconsPack . rightIconsPack";
+    "leftHeader . . . . rightHeader"
+    "leftContentText . . rightContentImage rightContentImage rightContentImage"
+    "leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack";
 }
 
 /* Grid Areas */
@@ -27,11 +27,13 @@ body {
 .leftHeader {
   grid-area: leftHeader;
   justify-self: start;
+  align-self: center;
 }
 
 .rightHeader {
   grid-area: rightHeader;
   justify-self: end;
+  align-self: center;
 }
 
 .leftContentText {
@@ -40,15 +42,24 @@ body {
 
 .rightContentImage {
   grid-area: rightContentImage;
+  justify-self: end;
 }
 
 .leftIconsPack {
   grid-area: leftIconsPack;
+  justify-self: start;
+  align-self: center;
 }
 
 .rightIconsPack {
   grid-area: rightIconsPack;
+  justify-self: end;
+  align-self: center;
 }
+
+.rightContentImage img {
+    max-width: 500px;
+  }
 
 /* Navigation Menu Style */
 
