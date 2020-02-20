@@ -1,0 +1,37 @@
+.content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 300px 100px 300px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "leftHeader . rightHeader"
+    "leftContentText . rightContentImage"
+    "leftIconsPack . rightIconsPack";
+}
+
+.leftHeader {
+  grid-area: leftHeader;
+  justify-self: start;
+}
+
+.rightHeader {
+  grid-area: rightHeader;
+  justify-self: end;
+}
+
+.leftContentText {
+  grid-area: leftContentText;
+}
+
+.rightContentImage {
+  grid-area: rightContentImage;
+}
+
+.leftIconsPack {
+  grid-area: leftIconsPack;
+}
+
+.rightIconsPack {
+  grid-area: rightIconsPack;
+}
