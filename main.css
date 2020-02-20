@@ -18,7 +18,7 @@ body {
   grid-row-gap: 1em;
   grid-template-areas:
     "leftHeader . . . . rightHeader"
-    "leftContentText . . rightContentImage rightContentImage rightContentImage"
+    "leftContentText leftContentText . rightContentImage rightContentImage rightContentImage"
     "leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack";
 }
 
@@ -58,8 +58,8 @@ body {
 }
 
 .rightContentImage img {
-    max-width: 500px;
-  }
+  max-width: 500px;
+}
 
 /* Navigation Menu Style */
 
