@@ -13,16 +13,18 @@ body {
 /* Grid */
 
 .content {
+  min-height:100vh;
+  margin:0 auto 1px;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 100px 300px 100px 100px 100px 100px 300px 100px 1fr;
   grid-template-rows: 25px 420px 100px 1fr;
-  grid-row-gap: 2em;
+  grid-row-gap: 5em;
   grid-template-areas:
     ". . leftHeader . . . . rightHeader . ."
     ". . leftContentText leftContentText . rightContentImage rightContentImage rightContentImage . ."
     ". leftIconsPack leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack rightIconsPack ."
-    "footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave";
+    "footer footer footer footer footer footer footer footer footer footer";
 }
 
 /* Grid Areas */
@@ -66,8 +68,8 @@ body {
   max-width: 500px;
 }
 
-.footerWave {
-  grid-area: footerWave;
+.footer {
+  grid-area: footer;
   justify-self: center;
   align-self: end;
 }
