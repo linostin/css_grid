@@ -1,3 +1,5 @@
+* {margin:0; padding:0;}
+
 /* Background image */
 
 body {
@@ -13,13 +15,14 @@ body {
 .content {
   display: grid;
   justify-content: center;
-  grid-template-columns: 100px 300px 100px 100px 100px 100px 300px 100px;
-  grid-template-rows: 25px 420px 100px;
+  grid-template-columns: 1fr 100px 300px 100px 100px 100px 100px 300px 100px 1fr;
+  grid-template-rows: 25px 420px 100px 1fr;
   grid-row-gap: 2em;
   grid-template-areas:
-    ". leftHeader . . . . rightHeader ."
-    ". leftContentText leftContentText . rightContentImage rightContentImage rightContentImage ."
-    "leftIconsPack leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack rightIconsPack";
+    ". . leftHeader . . . . rightHeader . ."
+    ". . leftContentText leftContentText . rightContentImage rightContentImage rightContentImage . ."
+    ". leftIconsPack leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack rightIconsPack ."
+    "footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave footerWave";
 }
 
 /* Grid Areas */
@@ -63,6 +66,12 @@ body {
   max-width: 500px;
 }
 
+.footerWave {
+  grid-area: footerWave;
+  justify-self: center;
+  align-self: end;
+}
+
 /* Navigation Menu Style */
 
 .leftHeader a {
@@ -98,13 +107,4 @@ body {
 .textBlockBig {
   font-size: 40px;
   font-weight: 700;
-}
-
-.textBlockSmall {
-}
-
-.textBlockSmallFirstLine {
-}
-
-.textBlockSmallSecondLine {
 }
