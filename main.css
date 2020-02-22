@@ -21,7 +21,7 @@ body {
   grid-template-rows: 25px 420px 100px 1fr;
   grid-row-gap: 5em;
   grid-template-areas:
-    ". . leftHeader . . . . rightHeader . ."
+    ". . leftHeader leftHeader . . rightHeader rightHeader . ."
     ". . leftContentText leftContentText . rightContentImage rightContentImage rightContentImage . ."
     ". leftIconsPack leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack rightIconsPack ."
     "footer footer footer footer footer footer footer footer footer footer";
@@ -98,6 +98,14 @@ body {
   text-decoration-style: solid;
 }
 
+.leftHeader a:not(:last-child) {
+ margin-right: 30px;
+}
+
+.rightHeader a:not(:first-child) {
+  margin-left: 30px ;
+}
+
 /* leftContent Text Style*/
 
 .leftContentText {
@@ -109,4 +117,10 @@ body {
 .textBlockBig {
   font-size: 40px;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Footer Style*/
+
+.footer {
 }
