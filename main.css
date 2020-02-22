@@ -13,13 +13,13 @@ body {
 .content {
   display: grid;
   justify-content: center;
-  grid-template-columns: 300px 100px 100px 100px 100px 300px;
+  grid-template-columns: 100px 300px 100px 100px 100px 100px 300px 100px;
   grid-template-rows: 25px 420px 100px;
-  grid-row-gap: 1em;
+  grid-row-gap: 2em;
   grid-template-areas:
-    "leftHeader . . . . rightHeader"
-    "leftContentText leftContentText . rightContentImage rightContentImage rightContentImage"
-    "leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack";
+    ". leftHeader . . . . rightHeader ."
+    ". leftContentText leftContentText . rightContentImage rightContentImage rightContentImage ."
+    "leftIconsPack leftIconsPack leftIconsPack leftIconsPack rightIconsPack rightIconsPack rightIconsPack rightIconsPack";
 }
 
 /* Grid Areas */
@@ -38,6 +38,8 @@ body {
 
 .leftContentText {
   grid-area: leftContentText;
+  justify-self: start;
+  align-self: center;
 }
 
 .rightContentImage {
@@ -47,13 +49,13 @@ body {
 
 .leftIconsPack {
   grid-area: leftIconsPack;
-  justify-self: start;
+  justify-self: center;
   align-self: center;
 }
 
 .rightIconsPack {
   grid-area: rightIconsPack;
-  justify-self: end;
+  justify-self: center;
   align-self: center;
 }
 
@@ -83,4 +85,26 @@ body {
   color: #212529;
   text-decoration-line: none;
   text-decoration-style: solid;
+}
+
+/* leftContent Text Style*/
+
+.leftContentText {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.textBlockBig {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.textBlockSmall {
+}
+
+.textBlockSmallFirstLine {
+}
+
+.textBlockSmallSecondLine {
 }
