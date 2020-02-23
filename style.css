@@ -292,6 +292,12 @@ ul {
   .links .links-inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer div {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
 }
 
 @media (max-width: 500px) {
